@@ -11,5 +11,5 @@ Databend 项目地址： https://github.com/datafuselabs/databend
 
 如果对课程有建议或是想参与进来，也可以提 issue 交流。
 
-[加入学习群](./img/入群二维码.png)
+[](./img/入群二维码.png)
 
