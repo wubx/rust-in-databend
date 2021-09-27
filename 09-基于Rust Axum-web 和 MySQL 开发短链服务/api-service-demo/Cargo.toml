@@ -1,0 +1,16 @@
+[package]
+name = "api-service-demo"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = { version = "0.2.3" }
+sqlx = { version = "0.5.6", features = ["mysql", "runtime-tokio-rustls"] }
+tokio = { version = "1.11.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+tower = { version = "0.4", features = ["util", "timeout"] }
+tower-http = { version = "0.1", features = ["add-extension", "trace"] }
+uuid = { version = "0.8.2", features = ["serde", "v4"] }
+anyhow = "1.0.44"

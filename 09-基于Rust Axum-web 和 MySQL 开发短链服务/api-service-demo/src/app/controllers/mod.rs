@@ -1,0 +1,1 @@
+pub mod shortlink_controller;
