@@ -29,13 +29,13 @@ pub async fn delete_shortlink(pool: &Pool<MySql>, id: u64) -> Result<MySqlQueryR
         .execute(pool).await
 }
 
-pub async fn get_shortlink(pool: &Pool<MySql>, id: i32) -> Result<ShortLink, Error> {
-    sqlx::query_as::<_, ShortLink>(
-        r#"
-            SELECT * FROM short_links
-            WHERE id = ?
-            "#,
-    )
-        .bind(id)
-        .fetch_one(pool).await
-}
+// pub async fn get_shortlink(pool: &Pool<MySql>, id: i32) -> Result<ShortLink, Error> {
+//     sqlx::query_as::<_, ShortLink>(
+//         r#"
+//             SELECT * FROM short_links
+//             WHERE id = ?
+//             "#,
+//     )
+//         .bind(id)
+//         .fetch_one(pool).await
+// }

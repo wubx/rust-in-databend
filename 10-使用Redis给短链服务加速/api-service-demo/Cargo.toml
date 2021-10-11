@@ -14,3 +14,4 @@ tower = { version = "0.4", features = ["util", "timeout"] }
 tower-http = { version = "0.1", features = ["add-extension", "trace"] }
 uuid = { version = "0.8.2", features = ["serde", "v4"] }
 anyhow = "1.0.44"
+redis = { version = "0.21", features = ["tokio-comp", "aio"] }
