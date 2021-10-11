@@ -1,5 +1,4 @@
 use serde::{Deserialize, Serialize};
-use crate::app::models;
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct CreateShortLinkReq {
@@ -17,16 +16,12 @@ pub struct DeleteShortLinkReq {
 }
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
-pub struct DeleteUserResp {
+pub struct DeleteShortLinkResp {
     pub ok: bool,
 }
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
-pub struct GetShortLinkReq {
-    pub id: u64,
-}
-
-#[derive(Debug, Serialize, Deserialize, Clone)]
-pub struct GetUsersResp {
-    pub users: models::shortlink::ShortLink,
+pub struct ShortLinkInfoResp {
+    pub id: u32,
+    pub url: String
 }
