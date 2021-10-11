@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug, FromRow, Clone)]
 pub struct ShortLink {
-    pub id: i32,
+    pub id: u32,
     pub url: String,
 }
 
@@ -27,4 +27,15 @@ pub async fn delete_shortlink(pool: &Pool<MySql>, id: u64) -> Result<MySqlQueryR
     )
         .bind(id)
         .execute(pool).await
+}
+
+pub async fn get_shortlink(pool: &Pool<MySql>, id: i32) -> Result<ShortLink, Error> {
+    sqlx::query_as::<_, ShortLink>(
+        r#"
+            SELECT * FROM short_links
+            WHERE id = ?
+            "#,
+    )
+        .bind(id)
+        .fetch_one(pool).await
 }
