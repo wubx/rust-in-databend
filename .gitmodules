@@ -1,0 +1,6 @@
+[submodule "11-实战：使用"]
+	path = 11-实战：使用
+	url = https://github.com/myrfy001/rust_golang_ffi_demo
+[submodule "11-实战-使用 Rust 开发动态链接库并在 Golang中使用-上/rust_golang_ffi_demo"]
+	path = 11-实战-使用 Rust 开发动态链接库并在 Golang中使用-上/rust_golang_ffi_demo
+	url = https://github.com/myrfy001/rust_golang_ffi_demo
