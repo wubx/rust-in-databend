@@ -1,1 +1,50 @@
-*/.DS_Store
+# IntelliJ project files
+.idea/*
+
+# visual studio code files
+.vscode
+.dir-locals.el
+
+# Rust
+target/*
+distro/*
+cli/e2e/bendctl
+.cargo/config.toml
+
+# OS related
+### MacOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# profile
+flamegraph.*
+perf.*
+
+# tests
+*.stderr
+*.stdout
+*.out
+*.err
+*.error
+*.swp
+_local_fs/*
+_meta*/*
+stateless_test_data/*
+**/_logs*/*
+_data/
+_tmp/*
+tls/certs/*
+.databend/
+checksums.txt
+
+# for tests in mac
+*.stderr-e
+*.stdout-e
+tests/perfs/*-result.json
+
+# python
+venv/
+*.pyc
+__pycache__/*
+
