@@ -15,7 +15,6 @@ Databend 项目地址： https://github.com/datafuselabs/databend
 
 ## 课程同步地址：
 - 腾讯会议：  https://meeting.tencent.com/dm/mlhs6YsYuFRb  会议 ID： 258 663 900
-- B站： http://live.bilibili.com/22123086
 - PPT发布： https://github.com/wubx/rust-in-databend
 - Databend公众号:  Databend 
 - Rust中文社区 : rustcc.cn 
